@@ -1,0 +1,18 @@
+//Task 1: Find Maximum Element int[] arr = {3, 7, 2, 9, 5};
+
+public class Main
+{
+	public static void main(String[] args) {
+		//int max = 0;
+		
+		int max = arr[0];   // Always start with first element
+		int[] arr = {3,7,2,9,5};
+
+		for (int i = 0; i < arr.length; i++) {
+			if(arr[i] > max) {  
+				max = arr[i];
+			}
+		}
+		System.out.print(max);
+	}
+}
