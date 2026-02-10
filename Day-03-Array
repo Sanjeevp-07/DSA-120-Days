@@ -19,3 +19,32 @@ public class Main
 		System.out.println(SecondLargest);
 	}
 }
+
+
+
+
+
+//Move All Zeros to End Array int[] arr = {0, 1, 0, 3, 12};
+
+
+public class Main
+{
+	public static void main(String[] args) {
+		int[] arr = {0, 1, 0, 3, 12};
+		int j = 0;
+		
+		
+		for(int i = 0 ; i < arr.length; i++) {
+			if(arr[i] != 0) {
+				int temp = arr[i] ;
+				arr[i] = arr[j];
+				arr[j] = temp;
+				j++;
+			} 
+			}
+			for(int i = 0 ; i < arr.length; i++){
+			    int num = arr[i];
+			    System.out.print(arr[i] + " ");
+			}
+		}
+    }
