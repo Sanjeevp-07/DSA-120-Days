@@ -1,0 +1,65 @@
+
+//Middle of the linked List 
+
+class Solution {
+    public ListNode middleNode(ListNode head) {
+        ListNode fast = head;
+        ListNode slow = head;
+
+        while(fast != null && fast.next != null){
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        return slow;
+    }
+}
+
+TC = O(n)
+SC = O(1)
+
+
+// Reverse of the Linked List 
+
+class Solution {
+    public ListNode reverseList(ListNode head) {
+        ListNode curr = head;
+        ListNode prev = null;
+
+        while(curr != null){
+            ListNode next = curr.next;
+
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        return prev;
+    }
+}
+
+
+TC = O(n)
+SC = O(1)
+
+
+
+
+//Linked List Cycle
+public class Solution {
+    public boolean hasCycle(ListNode head) {
+        ListNode fast = head;
+        ListNode slow = head;
+
+        while(fast != null && fast.next != null){
+            slow = slow.next;
+            fast = fast.next.next;
+            
+            if ( slow == fast ){
+                return true ;
+            }
+        }
+         return false ;
+    }
+}
+
+TC = O(n)
+SC = O(1)
