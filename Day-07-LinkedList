@@ -32,3 +32,36 @@ class Solution {
 
 TC = O(n)
 SC = O(1)
+
+
+
+
+//Intersection of two linked List 
+
+public class Solution {
+    public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+        ListNode A = headA;
+        ListNode B = headB;
+
+        while (A != B){
+
+            if (A == null){
+                A = headB; 
+            }else{
+                A = A.next;
+            }
+
+            if (B == null){
+                B = headA; 
+            }else{
+                B = B.next;
+            }
+        }
+        return A;
+    }
+}
+
+TC = O(n)
+SC = O(1)
+
+
