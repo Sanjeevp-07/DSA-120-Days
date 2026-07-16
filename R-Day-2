@@ -87,3 +87,26 @@ public class Main
 		System.out.println(big(n,m));
 	}
 }
+
+
+/******************************************************************************
+Write a function that takes in the radius as input and returns the circumference of a circle.
+*******************************************************************************/
+
+import java.util.*;
+
+public class Main
+{
+
+	public static double circumference(int n) {
+		double res = 2 * 3.14 * n;
+		return res;
+	}
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+
+		System.out.println(circumference(n));
+	}
+}
