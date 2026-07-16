@@ -58,3 +58,32 @@ public class Main
         System.out.println(result);
 	}
 }
+
+
+/******************************************************************************
+Write a function which takes in 2 numbers and returns the greater of those two.
+*******************************************************************************/
+
+import java.util.*;
+
+public class Main
+{
+
+	public static int big(int n, int m) {
+		if(n > m) {
+			return n;
+		} else {
+			return m;
+		}
+	}
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int m = sc.nextInt();
+
+		big(n,m);
+
+		System.out.println(big(n,m));
+	}
+}
