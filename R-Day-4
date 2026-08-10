@@ -1,0 +1,28 @@
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    int n = sc.nextInt(); 
+	    
+	    int [] max = new int[n];
+	    
+	    int temp = 0;
+	    
+	    for(int i = 0; i < max.length; i++){
+	        max[i] = sc.nextInt();
+	        }
+	        
+	    int lar = 0;
+	    
+	    for(int i = 0; i < max.length; i++){
+	        
+	        if (lar < max[i]){
+	            lar = max[i];
+	        }
+	        
+	    }
+	    System.out.println(lar);
+	}
+}
