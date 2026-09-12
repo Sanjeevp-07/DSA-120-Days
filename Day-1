@@ -63,3 +63,23 @@ public class Main
 		}
 	}
 }
+
+
+//Q4. Take two integers and print the larger number.
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        
+        int x = sc.nextInt();
+        int y = sc.nextInt();
+        
+        if(x < y){
+            System.out.println(y + " is the greater number");
+        }else{
+            System.out.println(x + " is the greater number");
+        }
+    }
+}
