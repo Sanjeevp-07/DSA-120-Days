@@ -108,3 +108,29 @@ public class Main{
         }
     }
 }
+
+
+
+
+
+
+
+
+//Q7. Given an integer n, determine whether it is divisible by both 3 and 5.
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        
+        int x = sc.nextInt();
+        
+        if(x % 3 == 0 && x % 5 == 0){
+            System.out.println(x + " is divisible by 3 and 5 both");
+        }else{
+            System.out.println(x + " is divisible by 3 and 5 both");
+        }
+        
+    }
+}
