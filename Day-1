@@ -158,3 +158,31 @@ public class Main{
         
     }
 }
+
+
+
+
+
+
+//Q9. Given three sides a, b, c, determine whether they can form a triangle.
+//The condition is:
+//a + b > c
+//a + c > b
+//b + c > a
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        
+        if((a + b > c) && (a + c > b) && (b + c > a)){
+            System.out.println("Yes we can form traingle");
+        }
+        else{
+            System.out.println("No we can't able to form a traingle");
+        }
+    }
+}
