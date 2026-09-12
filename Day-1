@@ -221,3 +221,31 @@ public class Main{
         }
     }
 }
+
+
+
+/***1. Second largest of 3 numbers
+Input: 10 25 18 → Output: 18
+Don't sort.***/
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        
+        if(a < b && b < c){
+            System.out.println(b + " is the second largest number");
+        }
+        else if(b < a && a < c){
+            System.out.println(a + " is the second largest number");
+        }
+        else{
+            System.out.println(c + " is the second largest number");
+        }
+    }
+}
