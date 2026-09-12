@@ -134,3 +134,27 @@ public class Main{
         
     }
 }
+
+
+
+
+
+
+//Q8. Given n, determine whether it is a 3-digit number.
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        
+        int x = sc.nextInt();
+        
+        if(x >= 100 && x <= 999){
+            System.out.println("Yes"+ x + " is 3-digit number");
+        }else{
+            System.out.println("No"+ x + " is not 3-digit number");
+        }
+        
+    }
+}
