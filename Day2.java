@@ -241,7 +241,7 @@ public class Day2{
 
 
 
-//Q11:Find the second largest element without sorting.
+/* //Q11:Find the second largest element without sorting.
 import java.util.Scanner;
 public class Day2{
     public static void main(String[] args){
@@ -265,4 +265,176 @@ public class Day2{
         }
         System.out.print(secondLargest + " is the Second largest element in the array");
     }
-} 
+}  */
+
+
+
+
+
+
+// Q12: Move all zeroes to the end while maintaining the order of non-zero elements
+//Input:0 1 0 3 12
+//Output:1 3 12 0 0
+/* import java.util.Scanner;
+
+public class Day2{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        int[] arr = new int[n];
+
+        for(int i = 0; i < arr.length; i++){
+            arr[i] = sc.nextInt();
+        }
+        
+        int insertPos = 0;
+
+        for(int i = 0; i < arr.length; i++){
+            if(arr[i] != 0){
+                 arr[insertPos] = arr[i];
+                 insertPos++;
+            }
+        }
+
+        while(insertPos < arr.length){
+            arr[insertPos] = 0;
+            insertPos++;
+        }
+
+        for(int i = 0; i < arr.length; i++){
+            System.out.print(arr[i] + " ");
+        }
+    }
+} */
+
+
+
+
+
+
+
+//String concept
+//Q13;Count the number of vowels in a String.
+/* import java.util.Scanner;
+
+public class Day2{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+
+        int count = 0;
+        for(int i = 0; i < str.length(); i++){
+            char ch = str.charAt(i);
+            
+            if(ch == 'a' ||ch == 'e' ||ch == 'i' ||ch == 'o' ||ch == 'u'){
+                count++;
+            }
+        }
+        System.out.print(count + " vowels are in the string");
+
+
+    }
+} */
+
+
+
+/* //Q14:Count uppercase and lowercase characters.
+import java.util.Scanner;
+public class Day2{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+
+        int upperCount = 0;
+        int lowerCount = 0;
+        for(int i = 0; i < str.length(); i++){
+            char ch = str.charAt(i);
+
+            if (Character.isUpperCase(ch)) {
+                upperCount++;
+            } else if (Character.isLowerCase(ch)) {
+                lowerCount++;
+            }
+        }
+        System.out.println("Uppercase characters: " + upperCount);
+        System.out.println("Lowercase characters: " + lowerCount);
+    }
+} */
+
+
+
+
+
+
+
+/* //Q15:Reverse a String.
+import java.util.Scanner;
+public class Day2{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+
+        for(int i = str.length() - 1; i >= 0; i--){
+            System.out.print(str.charAt(i));
+        }
+        
+    }
+} */
+
+
+
+
+
+
+
+    
+/* //Q16:Check whether a String is a palindrome.
+import java.util.Scanner;
+public class Day2{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+
+        boolean palindrome = true;
+
+        int left = 0;
+        int right = str.length() - 1;
+        
+        while(left < right){
+            if(str.charAt(left) != str.charAt(right)){
+                palindrome = false;
+                break;
+            }
+            left++; 
+            right--;
+        }
+        System.out.print(palindrome);
+    }
+} */
+
+
+
+
+
+
+
+//Q16:Check whether a String is a palindrome.
+import java.util.Scanner;
+public class Day2{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+
+        int target = 'e';
+        int count = 0;
+
+        for(int i = 0; i < str.length(); i++){
+            char ch = str.charAt(i);
+            if(ch == target){
+                count++;
+            }
+        }
+        System.out.print(count);
+    }
+}
